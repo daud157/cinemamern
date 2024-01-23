@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 })
 app.use(cors(
     {
-        origin: ["https://cinemamern-h1pw.vercel.app"],
+        origin: ["https://cinemamern-look.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
