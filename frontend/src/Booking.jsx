@@ -9,7 +9,6 @@ export default function Booking({setProgress}) {
   const { totalCost, setTotalCost } = useContext(MovieListContext);
   const {movieDetails,setMovieDetails}=useContext(MovieListContext);
   const {activeUser,setActiveUser}=useContext(MovieListContext);
-  axios.defaults.withCredentials = true;
   // const [ticket,setTicket]=useState({
 
 
@@ -26,6 +25,7 @@ export default function Booking({setProgress}) {
   // })
 
   const Navigate=useNavigate();
+  axios.defaults.withCredentials = true;
     useEffect(()=>{
 
         setProgress(40);

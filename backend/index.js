@@ -7,9 +7,8 @@ require("./config");
 const app =express();
 
 app.use(express.json());
-app.get("/", (req, res) => {
-    res.json("Hello");
-})
+app.use(cors());
+
 app.use(cors(
     {
         origin: ["https://cinemamern-look.vercel.app"],
@@ -17,8 +16,6 @@ app.use(cors(
         credentials: true
     }
 ));
-
-
 app.post("/signup",async(req,res)=>{
 
     const {name,email,password}=req.body;
@@ -106,7 +103,7 @@ app.post("/userdashboard/booking",(req,res)=>{
     .then(ticket=>{res.json(ticket)})
     .catch(err=>{console.log(err)})
     })
-app.listen(3000,()=>{
+app.listen(3001,()=>{
 
     console.log("listening")
 });

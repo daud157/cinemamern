@@ -5,7 +5,6 @@ import { MovieListContext } from './App';
 export default function Tickets() {
   const {activeUser,setActiveUser}=useContext(MovieListContext);
   const [users, setUsers] = useState([]);
-
   axios.defaults.withCredentials = true;
   useEffect(()=>{
     axios.post('https://cinemamern.vercel.app/userdashboard/tickets',{email:activeUser.email})
