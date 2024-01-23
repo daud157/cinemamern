@@ -25,7 +25,7 @@ export default function Login() {
 
   e.preventDefault();
   
-  axios.post('https://cinemamern-dbjw.vercel.app/login', { email, password })
+  axios.post('https://cinemamern.vercel.app/login', { email, password })
     .then(result => {
       console.log(result);
     //  const status = result.data;

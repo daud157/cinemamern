@@ -19,7 +19,7 @@ export default function SignUp() {
 
   e.preventDefault();
 
-    axios.post('https://cinemamern-dbjw.vercel.app/signup',{name,email,password})
+    axios.post('https://cinemamern.vercel.app/signup',{name,email,password})
     .then(result=>{console.log(result)
         if(result.data.status==="success"){
         // window.alert(result.data.status)
