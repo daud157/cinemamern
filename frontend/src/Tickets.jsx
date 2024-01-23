@@ -6,7 +6,7 @@ export default function Tickets() {
   const {activeUser,setActiveUser}=useContext(MovieListContext);
   const [users, setUsers] = useState([]);
   useEffect(()=>{
-    axios.post('http://localhost:3000/userdashboard/tickets',{email:activeUser.email})
+    axios.post('https://cinemamern-dbjw.vercel.app/userdashboard/tickets',{email:activeUser.email})
     .then(result=>{console.log(result.data.users)
                    setUsers(result.data.users)
     })
