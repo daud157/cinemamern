@@ -14,7 +14,8 @@ export default function Login() {
   const [password,setPassword]=useState();
   const {loggedIn,setLoggedIn}=useContext(MovieListContext);
   const {activeUser,setActiveUser}=useContext(MovieListContext);
- 
+    
+  axios.defaults.withCredentials = true;
 
   const Navigate=useNavigate();
   useEffect(() => {
