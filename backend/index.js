@@ -7,6 +7,9 @@ require("./config");
 const app =express();
 
 app.use(express.json());
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 app.use(cors(
     {
         origin: ["https://cinemamern-h1pw.vercel.app"],
