@@ -16,6 +16,9 @@ app.use(cors(
         credentials: true
     }
 ));
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 app.post("/signup",async(req,res)=>{
 
     const {name,email,password}=req.body;
