@@ -5,9 +5,8 @@ import { MovieListContext } from './App';
 export default function Tickets() {
   const {activeUser,setActiveUser}=useContext(MovieListContext);
   const [users, setUsers] = useState([]);
-  axios.defaults.withCredentials = true;
   useEffect(()=>{
-    axios.post('https://cinemamern.vercel.app/userdashboard/tickets',{email:activeUser.email})
+    axios.post('http://localhost:3001/userdashboard/tickets',{email:activeUser.email})
     .then(result=>{console.log(result.data.users)
                    setUsers(result.data.users)
     })
@@ -40,7 +39,7 @@ export default function Tickets() {
       </div>
 
       {users.map((user, userIndex) => (
-        <div key={userIndex} className="flex my-4 py-6 hover:bg-secondary hover:text-black rounded-3xl hover:cursor-pointer">
+        <div key={userIndex} className="flex text-sm my-4 py-6 hover:bg-secondary hover:text-black rounded-3xl hover:cursor-pointer">
           {Object.keys(user).map((key, index) => (
             <div key={index} className="flex-1 text-center">
               <p className="">{user[key]}</p>

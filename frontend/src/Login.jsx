@@ -16,7 +16,6 @@ export default function Login() {
   const {activeUser,setActiveUser}=useContext(MovieListContext);
  
 
-  axios.defaults.withCredentials = true;
   const Navigate=useNavigate();
   useEffect(() => {
     console.log('loggedIn changed:', loggedIn);
@@ -26,7 +25,7 @@ export default function Login() {
 
   e.preventDefault();
   
-  axios.post('https://cinemamern.vercel.app/login', { email, password })
+  axios.post('http://localhost:3001/login', { email, password })
     .then(result => {
       console.log(result);
     //  const status = result.data;
@@ -61,13 +60,13 @@ export default function Login() {
     return (
         <div className=" relative flex flex-col justify-center min-h-screen  bg-primary   ">
           <SlidingText/>
-            <div className="w-1/4 p-6 h-3/5  bg-primary rounded-md m-auto mt-24 shadow-custom mb-16" >
+            <div className="w-3/4 mt-10 ml-14 xl:w-1/4  xl:p-6 xl:m-auto xl:mt-32 bg-primary rounded-md lg:max-w-xl shadow-custom mb-28 xl:mb-28" >
                 <h1 className="text-3xl font-semibold text-center text-secondary mt-8  ">
                    Sign in
                 </h1>
                 <form className="mt-6 " onSubmit={handleSubmit}>
                 
-                    <div className="mb-4 mt-12">
+                    <div className="mb-4 mt-12 ml-4 xl:ml-0 w-5/6 ">
                         <label
                             // for="email"
                             className="block text-md font-semibold text-secondary"
@@ -81,7 +80,7 @@ export default function Login() {
                             onChange={(e)=>setEmail(e.target.value)}
                         />
                     </div>
-                    <div className="mb-4 mt-12">
+                    <div className="mb-4 mt-12 ml-4 xl:ml-0 w-5/6 ">
                         <label
                             // for="password"
                             className="block text-md font-semibold text-secondary"
@@ -96,14 +95,14 @@ export default function Login() {
                        />
                     </div>
                    
-                    <div className="mt-6">
+                    <div className="mt-6 ml-4 xl:ml-0 w-5/6 ">
                         <button  className="w-full px-4 py-2 rounded-3xl  mt-6 tracking-wide text-white transition-colors duration-200 transform  bg-secondary">
                             Sign in
                         </button>
                     </div>
                 </form>
                 <p className='mt-4 ml-48'>Or</p>
-                <p className="mt-4 text-32 font-light text-center text-secondary ">
+                <p className="mt-4 text-32 font-light text-center text-secondary mb-4 ">
                     {" "}
                     Create an account?{" "}
                     <Link to="/signup"

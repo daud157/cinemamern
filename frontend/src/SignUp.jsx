@@ -12,14 +12,14 @@ export default function SignUp() {
   const [name,setName]=useState();
   const [email,setEmail]=useState();
   const [password,setPassword]=useState();
-  axios.defaults.withCredentials = true;
+  
   const navigate=useNavigate();
 
   const handleSubmit=(e)=>{
 
   e.preventDefault();
 
-    axios.post('https://cinemamern.vercel.app/signup',{name,email,password})
+    axios.post('http://localhost:3001/signup',{name,email,password})
     .then(result=>{console.log(result)
         if(result.data.status==="success"){
         // window.alert(result.data.status)
@@ -42,26 +42,26 @@ export default function SignUp() {
         
         <div className="relative flex flex-col justify-center bg-primary min-h-screen ">
           <SlidingText></SlidingText>
-            <div className=" w-1/4  p-6 m-auto mt-32 bg-primary rounded-md lg:max-w-xl shadow-custom mb-28">
+            <div className="w-3/4 mt-10 ml-14 xl:w-1/4  xl:p-6 xl:m-auto xl:mt-32 bg-primary rounded-md lg:max-w-xl shadow-custom mb-28 xl:mb-28">
                 <h1 className="text-3xl mt-6 font-semibold text-center text-secondary  ">
                    Sign Up
                 </h1>
                 <form className="mt-6" onSubmit={handleSubmit}>
-                <div className="mb-2 mt-6">
+                <div className="mb-2 mt-6 ml-4 xl:ml-0">
                         <label
                             // for="email"
-                            className="block text-md font-semibold text-secondary"
+                            className="block text-md font-semibold text-secondary  "
                         >
                             User Name
                         </label>
                         <input
                             type="text"
                             placeholder='Enter username '
-                            className="block w-full px-4 py-2 mt-6 text-secondary  bg-primary rounded-md border-secondary border-b-2 outline-none "
+                            className="block w-5/6 px-4 py-2 mt-6 text-secondary  bg-primary rounded-md border-secondary border-b-2 outline-none "
                             onChange={(e)=>setName(e.target.value)}
                         />
                     </div>
-                    <div className="mb-2">
+                    <div className="mb-2  ml-4 xl:ml-0 w-5/6 ">
                         <label
                             // for="email"
                             className="block text-md font-semibold text-secondary"
@@ -75,7 +75,7 @@ export default function SignUp() {
                             onChange={(e)=>setEmail(e.target.value)}
                         />
                     </div>
-                    <div className="mb-2 ">
+                    <div className="mb-2  ml-4 xl:ml-0 w-5/6 ">
                         <label
                             // for="password"
                             className="block text-md font-semibold text-secondary mt-6 "
@@ -90,14 +90,14 @@ export default function SignUp() {
                        />
                     </div>
                    
-                    <div className="mt-6">
+                    <div className="mt-6 w-5/6 ml-4 xl:ml-0">
                         <button className="w-full px-4 py-2 mt-4 tracking-wide text-primary transition-colors duration-200 transform bg-secondary rounded-3xl">
                             Sign Up
                         </button>
                     </div>
                 </form>
                  <p className='mt-4 ml-48 text-secondary'>Or</p>
-                <p className="mt-2 text-md font-light text-center text-secondary">
+                <p className="mt-2 text-md font-light text-center text-secondary mb-4">
                     {" "}
                     Already have an account?{" "}
                     <Link to="/login"

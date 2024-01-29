@@ -154,9 +154,9 @@ const MovieList = () => {
 
   return (
     
-    <div className=" w-screen mx-auto bg-primary shadow-md border-b border-t border-t-secondary border-b-secondary ">
+    <div className=" w-screen mx-auto bg-primary shadow-md border-b border-t border-t-secondary border-b-secondary  ">
       <h5 className="text-3xl  text-white font-bold mb-4 py-8 px-16" >Premium Movies</h5>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-52 mr-32 mb-16" >
+      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-16 ml-28 mr-16  md:ml-20 md:mr-0" >
         {movies.map((movie) => (
           <div key={movie.id} className=" p-4 ">
             <img

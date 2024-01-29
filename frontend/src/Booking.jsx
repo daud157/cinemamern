@@ -25,7 +25,6 @@ export default function Booking({setProgress}) {
   // })
 
   const Navigate=useNavigate();
-  axios.defaults.withCredentials = true;
     useEffect(()=>{
 
         setProgress(40);
@@ -36,7 +35,7 @@ export default function Booking({setProgress}) {
         },[]);
         const handleClick=()=>{
 
-            axios.post("https://cinemamern.vercel.app/userdashboard/booking",{
+            axios.post("http://localhost:3001/userdashboard/booking",{
             
              name:activeUser.userName,
              email:activeUser.email,

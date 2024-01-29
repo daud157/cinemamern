@@ -16,8 +16,8 @@ const AboutUsPage = () => {
           updated with the latest releases and ensure an enjoyable cinematic journey for all.
         </p>
         <h2 className="text-2xl font-semibold mt-4  text-center">Meet Our Team</h2>
-        <ul className="list-disc list-inside flex flex-row items-center text-center mt-0">
-          <li className="mb-4 mr-6 mt-20">
+        <ul className=" flex flex-col items-left ml-0 xl:flex-row xl:items-center text-center mt-0">
+          <li className="mt-8 xl:mb-4 xl:mr-6 xl:mt-20">
             <img
               className="w-24 h-24 rounded-full mb-2 ml-16 "
               src=""
@@ -26,7 +26,7 @@ const AboutUsPage = () => {
               <p className='underline font-semibold'>Ayesha Eman - Head of Content</p>
          
           </li>
-          <li className="mb-4 mr-8 ml-48">
+          <li className="mt-8 xl:mb-4 xl:mr-8 xl:ml-48">
             <img
               className="w-32 h-32 rounded-full mb-2 ml-12"
               src="https://lh3.googleusercontent.com/a/ACg8ocIqzOkx-wHkdfe5rYUd4ot-3Hk5tlNiMYY5P0ymaDWFjg=s288-c-no"
@@ -35,7 +35,7 @@ const AboutUsPage = () => {
             />
              <p className='underline font-semibold'>Daud Ahmed- Founder & CEO</p>
           </li>
-          <li className=" ml-40 mt-20">
+          <li className=" mt-8 xl:ml-40 xl:mt-20">
             <img
               className="w-24 h-24 rounded-full mb-2 ml-16"
               src="https://via.placeholder.com/100"
