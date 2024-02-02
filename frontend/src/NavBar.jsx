@@ -8,7 +8,7 @@ const Navigation = () => {
   
   return (
     < div className='w-screen bg-slate'>
-      <nav className="text-secondary bg-primary h-28 border-secondary  border-b-2 flex    sticky top-0  z-[10]">
+      <nav className="text-secondary bg-primary h-28 border-secondary  border-b-2 flex    sticky top-0  ">
         <div className=" bg-primary  h-23 w-full mt-2 rounded-tl-3xl ml-1 mr-1 rounded-tr-3xl">
           <div className="flex items-center justify-between px-5">
             <div className="font-bold text-3xl ">Cineplex</div>

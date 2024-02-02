@@ -20,7 +20,7 @@ const AboutUsPage = () => {
           <li className="mt-8 xl:mb-4 xl:mr-6 xl:mt-20">
             <img
               className="w-24 h-24 rounded-full mb-2 ml-16 "
-              src=""
+              src="https://lh3.googleusercontent.com/a/ACg8ocIqzOkx-wHkdfe5rYUd4ot-3Hk5tlNiMYY5P0ymaDWFjg=s288-c-no"
               alt="John Doe"
             />
               <p className='underline font-semibold'>Ayesha Eman - Head of Content</p>
@@ -38,7 +38,7 @@ const AboutUsPage = () => {
           <li className=" mt-8 xl:ml-40 xl:mt-20">
             <img
               className="w-24 h-24 rounded-full mb-2 ml-16"
-              src="https://via.placeholder.com/100"
+              src="https://lh3.googleusercontent.com/a/ACg8ocIqzOkx-wHkdfe5rYUd4ot-3Hk5tlNiMYY5P0ymaDWFjg=s288-c-no"
               alt="Sam Johnson"
             />
             <p className='underline font-semibold '>Ayesha Malik  - Lead Developer</p>
