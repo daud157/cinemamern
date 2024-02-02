@@ -1,15 +1,12 @@
-// AboutUsPage.js
-
-import React from 'react';
 
 const AboutUsPage = () => {
   return (
-    <div className="bg-yellow-700 h-full flex justify-center ">
+    <div className="bg-yellow-700 h-screen flex justify-center ">
       <div className="bg-primary text-secondary mt-28 rounded-tl-3xl  rounded-br-3xl h-2/3 mb-20 w-2/3  shadow-md p-10 " >
         <h1 className="text-4xl font-bold mb-8 text-center ">About Cineplex</h1>
         <p className="mb-6 text-lg text-center">
-          Welcome to Cineplex, your ultimate destination for an immersive movie-watching experience.
-          We are committed to providing a diverse selection of films to cater to every movie enthusiast.
+          {/* Welcome to Cineplex, your ultimate destination for an immersive movie-watching experience.
+          We are committed to providing a diverse selection of films to cater to every movie enthusiast. */}
         </p>
         <p className="mb-4 text-lg text-center">
           At Cineplex, our team is driven by a passion for cinema, and we strive to keep you
