@@ -46,7 +46,7 @@ const Navigation = () => {
         </div>
       </nav>
       {menuOpen && (
-        <div className="top-0 left-0 w-full bg-primary z-10 flex justify-center sticky">
+        <div className="top-0 left-0 w-full bg-primary z-10 flex justify-center sticky md:hidden">
           <div className="pt-2 pb-3 space-y-3 sm:px-3 flex flex-col absolute bg-primary w-full px-36 py-2 items-center ">
             <NavLink to="/" onClick={closeMenu}>Home</NavLink>
             <NavLink to="/MoviesList" onClick={closeMenu}>Movies</NavLink>
