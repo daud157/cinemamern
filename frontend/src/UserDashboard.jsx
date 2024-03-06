@@ -6,9 +6,9 @@ export default function UserDashboard() {
 
   const {activeUser,setActiveUser}=useContext(MovieListContext);
   return (
-    <div className='h-full w-screen bg-white flex mt-4 rounded-xl '>
+    <div className='h-full w-screen bg-gradient-to-r from-yellow-600 to-yellow-950 flex px-2 py-10   '>
         <div className='h-5/6 w-1/6 bg-black rounded-xl'>
-        <img src="https://lh3.googleusercontent.com/a/ACg8ocKQ1Qjs9QFGZNn5SXL75TKR88HykH3dQ5_VfThG7sxlUoE=s288-c-no" className='w-20 h-20 rounded-full bg-white inline mt-4 ml-10 text-white '></img>
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocKQ1Qjs9QFGZNn5SXL75TKR88HykH3dQ5_VfThG7sxlUoE=s288-c-no" className='w-20 h-20 rounded-full inline mt-4 ml-10 text-white '></img>
             <p className='text-white text-xl inline ml-8'>{activeUser.userName}</p>
             <div className='h-1/1  text-center py-10 space-y-8 text-secondary'>
               <Link to="/userdashboard/booking" className= "block py-3 text-secondary  hover:bg-secondary hover:text-black  hover:rounded-tl-3xl hover:rounded-bl-3xl" >

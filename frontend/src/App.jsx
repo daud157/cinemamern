@@ -21,10 +21,10 @@ function App(){
 
   const [progress, setProgress] = useState(0)
   const [totalCost, setTotalCost] = useState(0);
-  const [loggedIn,setLoggedIn]=useState(false);
+  const [loggedIn,setLoggedIn]=useState();
   const [activeUser,setActiveUser]=useState({
-    userName:'daud',
-    email:'210@gmail.com'
+    userName:'',
+    email:''
   });
   const [movieDetails,setMovieDetails]=useState({
 
