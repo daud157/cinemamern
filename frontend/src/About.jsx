@@ -16,7 +16,7 @@ const AboutUsPage = () => {
         <ul className=" flex flex-col items-left ml-0 xl:flex-row xl:items-center text-center mt-0">
           <li className="mt-8 xl:mb-4 xl:mr-6 xl:mt-20 ml-4">
             <img
-              className="w-24 h-24 rounded-full mb-2 ml-16 "
+              className="w-24 h-24 rounded-full mb-2 ml-12"
               src="https://lh3.googleusercontent.com/a/ACg8ocIqzOkx-wHkdfe5rYUd4ot-3Hk5tlNiMYY5P0ymaDWFjg=s288-c-no"
               alt="John Doe"
             />
